@@ -1,0 +1,54 @@
+.progects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+.progects-thamb {
+  position: relative;
+  overflow: hidden;
+}
+.progects-overlay-text {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform $transition-animation;
+  overflow: auto;
+  display: inline-block;
+  padding: 63px 24px 0 24px;
+  @include font(18px, 1.56, 0.03em, null, null);
+  color: $primery-wight;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.progects-item {
+  width: 370px;
+}
+.container-progects {
+  padding: 20px 24px;
+}
+.progects-link {
+  transition: box-shadow $transition-animation;
+  display: block;
+  border: 1px solid $primery-gray;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    & .progects-overlay-text {
+      transform: translateY(0);
+    }
+  }
+}
+
+.progects-title {
+  margin-bottom: 4px;
+  @include font(18px, 2, 0.06em, null, null);
+  color: $primery-text-color;
+}
+
+.progects-text {
+  @include font(16px, 1.88, 0.03em, null, null);
+  color: $secondory-text-color;
+}

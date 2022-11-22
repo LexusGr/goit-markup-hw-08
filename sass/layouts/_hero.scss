@@ -1,0 +1,50 @@
+.overlay {
+  max-width: 1600px;
+  // height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-backgraund.jpg');
+  @include desktop {
+    max-height: 600px;
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 118px 0;
+  color: $primery-wight;
+  background-color: $therd-background-color;
+  @include desktop {
+    padding: 200px 0;
+  }
+}
+
+.hero-title {
+  margin: 0 auto;
+  max-width: 360px;
+  @include font(26px, 1.62, 0.06em, 900, uppercase);
+
+  @include desktop {
+    @include font(44px, 1.36, 0.06em, 900, uppercase);
+    max-width: 696px;
+  }
+}
+
+.hero-button {
+  min-width: 200px;
+  margin: 30px auto 0;
+  @include mobile {
+    min-width: 200px;
+  }
+  @include desktop {
+    min-width: 216px;
+  }
+  &:hover,
+  &:focus {
+    background-color: $secondory-accent-color;
+  }
+}

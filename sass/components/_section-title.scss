@@ -1,0 +1,13 @@
+.section-title {
+  margin-bottom: 30px;
+  @include font(28px, 1.17, 0.03em, null, null);
+  text-align: center;
+
+  // @media screen and (min-width: 768px) {
+  //   font-size: 28px;
+  // }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
