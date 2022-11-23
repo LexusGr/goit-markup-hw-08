@@ -51,12 +51,9 @@
   width: 100%;
   height: 100%;
   transform: translateY(101%);
-
   display: flex;
   align-items: center;
-
   padding: 0 24px;
-
   @include font(18px, 1.56, 0.03em, null, null);
   color: $primery-wight;
   background-color: $overlay-background;
@@ -70,10 +67,6 @@
 .projects-list__thumb:last-child {
   flex-grow: 1;
   padding: 20px 24px;
-  // padding-top: 20px;
-  // padding-right: 24px;
-  // padding-left: 24px;
-  // padding-bottom: 20px;
   border-left: 1px solid $primery-gray;
   border-right: 1px solid $primery-gray;
   border-bottom: 1px solid $primery-gray;
