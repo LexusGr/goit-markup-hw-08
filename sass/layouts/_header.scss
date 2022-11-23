@@ -16,13 +16,8 @@
       align-items: center;
     }
   }
-  // @include desktop {
-  //   padding-top: 24px;
-  //   padding-bottom: 25px;
-  // }
 }
 
-//добавить медиа запроси
 .navigation {
   @extend %aling-center;
   & .logo {
@@ -50,12 +45,8 @@
   color: $primery-black;
 }
 
-//добавить медиа запроси
 .menu {
-  // @extend %aling-center;
   display: none;
-  // align-items: center;
-  // gap: 50px;
   list-style: none;
   @include tablet {
     display: flex;
@@ -90,7 +81,6 @@
   }
 }
 
-//добавить медиа запроси
 .header-contact {
   display: none;
   list-style: none;
@@ -230,25 +220,23 @@
   margin-bottom: 32px;
 }
 .mob-contact__tel {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
-  /* identical to box height */
+  @include font(26px, calc(40 / 26), 0.02em, 500, null);
+
   color: #2196f3;
-  letter-spacing: 0.02em;
+
+  @include mobile {
+    @include font(34px, calc(40 / 34), 0.02em, 500, null);
+  }
 }
 .mob-contact__mail {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
+  @include font(24px, calc(28 / 24), 0.02em, 500, null);
 
   color: #757575;
 }
 .mob-social-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .mob-social-list__item:not(:last-child) {

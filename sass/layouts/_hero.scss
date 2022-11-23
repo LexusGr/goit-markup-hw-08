@@ -6,23 +6,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: $gradient, url('/images/hero-backgraund.jpg');
+  background-image: $gradient, url('../images/hero-backgraund.jpg');
   @include retina {
-    background-image: url('/images/hero-backgraund-2x.jpg');
+    background-image: url('../images/hero-backgraund-2x.jpg');
   }
 
   @include tablet {
-    background-image: $gradient, url('/images/tab/hero-backgraund-tab.jpg');
+    background-image: $gradient, url('../images/tab/hero-backgraund-tab.jpg');
     @include retina {
-      background-image: url('/images/tab/hero-backgraund-tab-2x.jpg');
+      background-image: url('../images/tab/hero-backgraund-tab-2x.jpg');
     }
   }
 
   @include desktop {
     max-height: 600px;
-    background-image: $gradient, url('/images/desktop/hero-backgraund-desk.jpg');
+    background-image: $gradient, url('../images/desktop/hero-backgraund-desk.jpg');
     @include retina {
-      background-image: url('/images/desktop/hero-backgraund-desk-2x.jpg');
+      background-image: url('../images/desktop/hero-backgraund-desk-2x.jpg');
     }
   }
 }
