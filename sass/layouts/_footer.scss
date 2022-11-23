@@ -16,18 +16,22 @@
       gap: 70px;
     }
   }
-  & .logo {
-    display: inline-block;
-    margin: 0 0 20px 0;
-    @include desktop {
-      font-size: 26px;
-      line-height: 1.19;
-    }
-  }
+
   &-address {
     text-align: center;
     @include desktop {
       text-align: start;
+    }
+    & .logo {
+      color: $accent-color;
+      font-family: 'Raleway';
+      @include font(24px, 1.17, 0.03em, null, null);
+      display: inline-block;
+      margin: 0 0 20px 0;
+      @include desktop {
+        font-size: 26px;
+        line-height: 1.19;
+      }
     }
   }
   &-social {

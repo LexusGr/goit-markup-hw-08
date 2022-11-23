@@ -11,25 +11,33 @@
     visibility: hidden;
     pointer-events: none;
   }
-}
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0);
-  transition: transform $transition-animation, border-radius $transition-animation;
-  min-height: 581px;
-  width: 528px;
-  border-radius: 4px;
-  padding: 40px;
-  background-color: $primery-wight;
-  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.14),
-    3px 0px 1px rgba(0, 0, 0, 0.12);
+  & .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-  .backdrop & {
-    transform: translate(-50%, -50%) scale(0) rotate(-360deg);
-    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $transition-animation, border-radius $transition-animation;
+    width: 95%;
+    // min-height: 609px;
+    border-radius: 4px;
+    padding: 40px;
+    background-color: $primery-wight;
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.14),
+      3px 0px 1px rgba(0, 0, 0, 0.12);
+    @include mobile {
+      width: 450px;
+    }
+    // @include tablet {
+    //   width: 450px;
+    // }
+    @include desktop {
+      // min-height: 581px;
+      width: 528px;
+      // transform: translate(-50%, -50%) scale(0) rotate(-360deg);
+      // border-radius: 50%;
+    }
   }
 }
 
@@ -59,8 +67,12 @@
 }
 
 .modal-title {
-  @include font(20px, 1.15, 0.03em, 700, null);
+  @include font(20px, 1.5, 0.03em, 700, null);
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   color: $primery-text-color;
+  @include desktop {
+    @include font(20px, 1.15, 0.03em, 700, null);
+    margin-bottom: 12px;
+  }
 }
