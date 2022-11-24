@@ -161,9 +161,12 @@
   top: 0;
   left: 0;
   z-index: 1;
-  padding: 48px 40px;
+  padding: 40px 32px;
   transform: translateX(100%);
   transition: transform $transition-animation;
+  @include mobile {
+    padding: 48px 40px;
+  }
 }
 
 .mob-menu.is-open {
@@ -214,10 +217,16 @@
 // .mob-menu-list--current {
 // }
 .mob-contact {
-  margin-bottom: 64px;
+  margin-bottom: 34px;
+  @include mobile {
+    margin-bottom: 64px;
+  }
 }
 .mob-contact__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+  @include mobile {
+    margin-bottom: 32px;
+  }
 }
 .mob-contact__tel {
   @include font(26px, calc(40 / 26), 0.02em, 500, null);

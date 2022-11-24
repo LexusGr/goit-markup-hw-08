@@ -796,13 +796,18 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  padding: 48px 40px;
+  padding: 40px 32px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu {
+    padding: 48px 40px;
+  }
 }
 
 .mob-menu.is-open {
@@ -869,11 +874,21 @@ body {
 }
 
 .mob-contact {
-  margin-bottom: 64px;
+  margin-bottom: 34px;
+}
+@media screen and (min-width: 480px) {
+  .mob-contact {
+    margin-bottom: 64px;
+  }
 }
 
 .mob-contact__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 480px) {
+  .mob-contact__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .mob-contact__tel {
