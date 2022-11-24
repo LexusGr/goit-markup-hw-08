@@ -28,7 +28,7 @@
           <a class="logo" href="./index.html"> Web<span class="logo--black">Studio</span></a>
           <ul class="menu">
             <li class="menu__item">
-              <a class="menu__link " href="./index.html">Студія</a>
+              <a class="menu__link" href="./index.html">Студія</a>
             </li>
             <li class="menu__item">
               <a class="menu__link menu--current" href="./portfolio.html">Портфоліо</a>
@@ -36,7 +36,12 @@
             <li class="menu__item"><a class="menu__link" href="./contacts.html">Контакти</a></li>
           </ul>
 
-          <button type="button" class="open-menu-mob js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <button
+            type="button"
+            class="open-menu-mob js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="open-menu-icon" width="40" height="40">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
@@ -61,7 +66,7 @@
         </ul>
       </div>
 
-      <div class="mob-menu js-menu-container" id="mobile-menu"">
+      <div class="mob-menu js-menu-container" id="mobile-menu">
         <div class="mob-menu-container">
           <div class="mob-menu-top">
             <button class="close-menu-mob js-close-menu">
@@ -71,12 +76,12 @@
             </button>
             <ul class="mob-menu-list list">
               <li class="mob-menu-list__item">
-                <a class="mob-menu-list__link link " href="./index.html"
-                  >Студія</a
-                >
+                <a class="mob-menu-list__link link" href="./index.html">Студія</a>
               </li>
               <li class="mob-menu-list__item">
-                <a class="mob-menu-list__link link mob-menu-list--current" href="./portfolio.html">Портфоліо</a>
+                <a class="mob-menu-list__link link mob-menu-list--current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
               </li>
               <li class="mob-menu-list__item">
                 <a class="mob-menu-list__link link" href="./contacts.html">Контакти</a>
@@ -120,23 +125,54 @@
           <h1 class="filters-title visually-hidden">портфоліо</h1>
           <ul class="filters-list list">
             <li class="filters-item"><button class="filters-button" type="button">Усі</button></li>
-            <li class="filters-item"><button class="filters-button" type="button">Додатки</button></li>
-            <li class="filters-item"><button class="filters-button" type="button">Веб-сайти</button></li>
-            <li class="filters-item"><button class="filters-button" type="button">Дизайн</button></li>
-            <li class="filters-item"><button class="filters-button" type="button">Маркетинг</button></li>
+            <li class="filters-item">
+              <button class="filters-button" type="button">Додатки</button>
+            </li>
+            <li class="filters-item">
+              <button class="filters-button" type="button">Веб-сайти</button>
+            </li>
+            <li class="filters-item">
+              <button class="filters-button" type="button">Дизайн</button>
+            </li>
+            <li class="filters-item">
+              <button class="filters-button" type="button">Маркетинг</button>
+            </li>
           </ul>
-           <ul class="projects-list list">
+          <ul class="projects-list list">
             <li class="projects-list__item">
               <a href="#" class="projects-list__link">
                 <div class="projects-list__thumb">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/card-1-mob-min.jpg 1x, ./images/card-1-mob@2x-min.jpg 2x, ./images/card-1-mob@3x-min.jpg 3x" />
-                    <source media="(max-width:1199px)" srcset="./images/card-1-tab-min.jpg 1x, ./images/card-1-tab@2x-min.jpg 2x, ./images/card-1-tab@3x-min.jpg 3x" />
-                    <source media="(min-width:1200px)" srcset="./images/card-1-desk-min.jpg 1x, ./images/card-1-desk@2x-min.jpg 2x, ./images/card-1-desk@3x-min.jpg 3x" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/card-1-mob-min.jpg    1x,
+                        ./images/card-1-mob@2x-min.jpg 2x,
+                        ./images/card-1-mob@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/card-1-tab-min.jpg    1x,
+                        ./images/card-1-tab@2x-min.jpg 2x,
+                        ./images/card-1-tab@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/card-1-desk-min.jpg    1x,
+                        ./images/card-1-desk@2x-min.jpg 2x,
+                        ./images/card-1-desk@3x-min.jpg 3x
+                      "
+                    />
                     <img src="./images/web-site-1.jpg" alt="ноутбук із відкритим сайтом" />
                   </picture>
                   <p class="projects-list__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projects-list__thumb">
@@ -149,17 +185,45 @@
               <a href="#" class="projects-list__link">
                 <div class="projects-list__thumb">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/card-2-mob-min.jpg 1x, ./images/card-2-mob@2x-min.jpg 2x, ./images/card-2-mob@3x-min.jpg 3x" />
-                    <source media="(max-width:1199px)" srcset="./images/card-2-tab-min.jpg 1x, ./images/card-2-tab@2x-min.jpg 2x, ./images/card-2-tab@3x-min.jpg 3x" />
-                    <source media="(min-width:1200px)" srcset="./images/card-2-desk-min.jpg 1x, ./images/card-2-desk@2x-min.jpg 2x, ./images/card-2-desk@3x-min.jpg 3x" />
-                    <img src="./images/poster-design.jpg" alt="один баскетболіст намагається відібрати м'яч у іншого" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/card-2-mob-min.jpg    1x,
+                        ./images/card-2-mob@2x-min.jpg 2x,
+                        ./images/card-2-mob@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/card-2-tab-min.jpg    1x,
+                        ./images/card-2-tab@2x-min.jpg 2x,
+                        ./images/card-2-tab@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/card-2-desk-min.jpg    1x,
+                        ./images/card-2-desk@2x-min.jpg 2x,
+                        ./images/card-2-desk@3x-min.jpg 3x
+                      "
+                    />
+                    <img
+                      src="./images/poster-design.jpg"
+                      alt="один баскетболіст намагається відібрати м'яч у іншого"
+                    />
                   </picture>
                   <p class="projects-list__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projects-list__thumb">
-                  <h2 class="projects-list__name">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                  <h2 class="projects-list__name">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
                   <p class="projects-list__type">Дизайн</p>
                 </div></a
               >
@@ -168,13 +232,36 @@
               <a href="#" class="projects-list__link">
                 <div class="projects-list__thumb">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/card-3-mob-min.jpg 1x, ./images/card-3-mob@2x-min.jpg 2x, ./images/card-3-mob@3x-min.jpg 3x" />
-                    <source media="(max-width:1199px)" srcset="./images/card-3-tab-min.jpg 1x, ./images/card-3-tab@2x-min.jpg 2x, ./images/card-3-tab@3x-min.jpg 3x" />
-                    <source media="(min-width:1200px)" srcset="./images/card-3-desk-min.jpg 1x, ./images/card-3-desk@2x-min.jpg 2x, ./images/card-3-desk@3x-min.jpg 3x" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/card-3-mob-min.jpg    1x,
+                        ./images/card-3-mob@2x-min.jpg 2x,
+                        ./images/card-3-mob@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/card-3-tab-min.jpg    1x,
+                        ./images/card-3-tab@2x-min.jpg 2x,
+                        ./images/card-3-tab@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/card-3-desk-min.jpg    1x,
+                        ./images/card-3-desk@2x-min.jpg 2x,
+                        ./images/card-3-desk@3x-min.jpg 3x
+                      "
+                    />
                     <img src="./images/restaurant-app.jpg" alt="назва ресторану на фоні риби" />
                   </picture>
                   <p class="projects-list__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projects-list__thumb">
@@ -187,13 +274,36 @@
               <a href="#" class="projects-list__link">
                 <div class="projects-list__thumb">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/card-4-mob-min.jpg 1x, ./images/card-4-mob@2x-min.jpg 2x, ./images/card-4-mob@3x-min.jpg 3x" />
-                    <source media="(max-width:1199px)" srcset="./images/card-4-tab-min.jpg 1x, ./images/card-4-tab@2x-min.jpg 2x, ./images/card-4-tab@3x-min.jpg 3x" />
-                    <source media="(min-width:1200px)" srcset="./images/card-4-desk-min.jpg 1x, ./images/card-4-desk@2x-min.jpg 2x, ./images/card-4-desk@3x-min.jpg 3x" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/card-4-mob-min.jpg    1x,
+                        ./images/card-4-mob@2x-min.jpg 2x,
+                        ./images/card-4-mob@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/card-4-tab-min.jpg    1x,
+                        ./images/card-4-tab@2x-min.jpg 2x,
+                        ./images/card-4-tab@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/card-4-desk-min.jpg    1x,
+                        ./images/card-4-desk@2x-min.jpg 2x,
+                        ./images/card-4-desk@3x-min.jpg 3x
+                      "
+                    />
                     <img src="./images/project-prime.jpg" alt="чорні накладні навушники" />
                   </picture>
                   <p class="projects-list__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projects-list__thumb">
@@ -206,13 +316,39 @@
               <a href="#" class="projects-list__link">
                 <div class="projects-list__thumb">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/card-5-mob-min.jpg 1x, ./images/card-5-mob@2x-min.jpg 2x, ./images/card-5-mob@3x-min.jpg 3x" />
-                    <source media="(max-width:1199px)" srcset="./images/card-5-tab-min.jpg 1x, ./images/card-5-tab@2x-min.jpg 2x, ./images/card-5-tab@3x-min.jpg 3x" />
-                    <source media="(min-width:1200px)" srcset="./images/card-5-desk-min.jpg 1x, ./images/card-5-desk@2x-min.jpg 2x, ./images/card-5-desk@3x-min.jpg 3x" />
-                    <img src="./images/boxes-app.jpg" alt="дві коробки з написами: біла ліворуч і коричнева - праворуч" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/card-5-mob-min.jpg    1x,
+                        ./images/card-5-mob@2x-min.jpg 2x,
+                        ./images/card-5-mob@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/card-5-tab-min.jpg    1x,
+                        ./images/card-5-tab@2x-min.jpg 2x,
+                        ./images/card-5-tab@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/card-5-desk-min.jpg    1x,
+                        ./images/card-5-desk@2x-min.jpg 2x,
+                        ./images/card-5-desk@3x-min.jpg 3x
+                      "
+                    />
+                    <img
+                      src="./images/boxes-app.jpg"
+                      alt="дві коробки з написами: біла ліворуч і коричнева - праворуч"
+                    />
                   </picture>
                   <p class="projects-list__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projects-list__thumb">
@@ -225,13 +361,36 @@
               <a href="#" class="projects-list__link">
                 <div class="projects-list__thumb">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/card-6-mob-min.jpg 1x, ./images/card-6-mob@2x-min.jpg 2x, ./images/card-6-mob@3x-min.jpg 3x" />
-                    <source media="(max-width:1199px)" srcset="./images/card-6-tab-min.jpg 1x, ./images/card-6-tab@2x-min.jpg 2x, ./images/card-6-tab@3x-min.jpg 3x" />
-                    <source media="(min-width:1200px)" srcset="./images/card-6-desk-min.jpg 1x, ./images/card-6-desk@2x-min.jpg 2x, ./images/card-6-desk@3x-min.jpg 3x" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/card-6-mob-min.jpg    1x,
+                        ./images/card-6-mob@2x-min.jpg 2x,
+                        ./images/card-6-mob@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/card-6-tab-min.jpg    1x,
+                        ./images/card-6-tab@2x-min.jpg 2x,
+                        ./images/card-6-tab@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/card-6-desk-min.jpg    1x,
+                        ./images/card-6-desk@2x-min.jpg 2x,
+                        ./images/card-6-desk@3x-min.jpg 3x
+                      "
+                    />
                     <img src="./images/web-site-2.jpg" alt="монітор з відкритим сайтом" />
                   </picture>
                   <p class="projects-list__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projects-list__thumb">
@@ -244,17 +403,42 @@
               <a href="#" class="projects-list__link">
                 <div class="projects-list__thumb">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/card-7-mob-min.jpg 1x, ./images/card-7-mob@2x-min.jpg 2x, ./images/card-7-mob@3x-min.jpg 3x" />
-                    <source media="(max-width:1199px)" srcset="./images/card-7-tab-min.jpg 1x, ./images/card-7-tab@2x-min.jpg 2x, ./images/card-7-tab@3x-min.jpg 3x" />
-                    <source media="(min-width:1200px)" srcset="./images/card-7-desk-min.jpg 1x, ./images/card-7-desk@2x-min.jpg 2x, ./images/card-7-desk@3x-min.jpg 3x" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/card-7-mob-min.jpg    1x,
+                        ./images/card-7-mob@2x-min.jpg 2x,
+                        ./images/card-7-mob@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/card-7-tab-min.jpg    1x,
+                        ./images/card-7-tab@2x-min.jpg 2x,
+                        ./images/card-7-tab@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/card-7-desk-min.jpg    1x,
+                        ./images/card-7-desk@2x-min.jpg 2x,
+                        ./images/card-7-desk@3x-min.jpg 3x
+                      "
+                    />
                     <img src="./images/limited-edition.jpg" alt="розгорнутий журнал" />
                   </picture>
                   <p class="projects-list__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projects-list__thumb">
-                  <h2 class="projects-list__name">Видання <span lang="en">Limited Edition</span></h2>
+                  <h2 class="projects-list__name">
+                    Видання <span lang="en">Limited Edition</span>
+                  </h2>
                   <p class="projects-list__type">Дизайн</p>
                 </div>
               </a>
@@ -263,13 +447,36 @@
               <a href="#" class="projects-list__link">
                 <div class="projects-list__thumb">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/card-8-mob-min.jpg 1x, ./images/card-8-mob@2x-min.jpg 2x, ./images/card-8-mob@3x-min.jpg 3x" />
-                    <source media="(max-width:1199px)" srcset="./images/card-8-tab-min.jpg 1x, ./images/card-8-tab@2x-min.jpg 2x, ./images/card-8-tab@3x-min.jpg 3x" />
-                    <source media="(min-width:1200px)" srcset="./images/card-8-desk-min.jpg 1x, ./images/card-8-desk@2x-min.jpg 2x, ./images/card-8-desk@3x-min.jpg 3x" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/card-8-mob-min.jpg    1x,
+                        ./images/card-8-mob@2x-min.jpg 2x,
+                        ./images/card-8-mob@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/card-8-tab-min.jpg    1x,
+                        ./images/card-8-tab@2x-min.jpg 2x,
+                        ./images/card-8-tab@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/card-8-desk-min.jpg    1x,
+                        ./images/card-8-desk@2x-min.jpg 2x,
+                        ./images/card-8-desk@3x-min.jpg 3x
+                      "
+                    />
                     <img src="./images/project-lab.jpg" alt="біла бірка з чорним текстом" />
                   </picture>
                   <p class="projects-list__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projects-list__thumb">
@@ -282,13 +489,39 @@
               <a href="#" class="projects-list__link">
                 <div class="projects-list__thumb">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/card-9-mob-min.jpg 1x, ./images/card-9-mob@2x-min.jpg 2x, ./images/card-9-mob@3x-min.jpg 3x" />
-                    <source media="(max-width:1199px)" srcset="./images/card-9-tab-min.jpg 1x, ./images/card-9-tab@2x-min.jpg 2x, ./images/card-9-tab@3x-min.jpg 3x" />
-                    <source media="(min-width:1200px)" srcset="./images/card-9-desk-min.jpg 1x, ./images/card-9-desk@2x-min.jpg 2x, ./images/card-9-desk@3x-min.jpg 3x" />
-                    <img src="./images/growing-business-app.jpg" alt="людина працює за ноутбуком з додатком" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/card-9-mob-min.jpg    1x,
+                        ./images/card-9-mob@2x-min.jpg 2x,
+                        ./images/card-9-mob@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/card-9-tab-min.jpg    1x,
+                        ./images/card-9-tab@2x-min.jpg 2x,
+                        ./images/card-9-tab@3x-min.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/card-9-desk-min.jpg    1x,
+                        ./images/card-9-desk@2x-min.jpg 2x,
+                        ./images/card-9-desk@3x-min.jpg 3x
+                      "
+                    />
+                    <img
+                      src="./images/growing-business-app.jpg"
+                      alt="людина працює за ноутбуком з додатком"
+                    />
                   </picture>
                   <p class="projects-list__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projects-list__thumb">
@@ -382,6 +615,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-   <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
